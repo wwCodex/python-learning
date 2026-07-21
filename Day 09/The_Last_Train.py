@@ -352,3 +352,246 @@ if sanity <= 0:
     print("INSANITY")
     alive = False
 
+if alive:
+    input("\nPress ENTER...")
+    print("\nThe lights suddenly come back on.")
+    print("\n...")
+    input()
+    print("Someone is standing in front of you.")
+    input()
+    print("\nA man wearing a black uniform.")
+    print("A silver watch hangs from his pocket.")
+    print("His face is strangely pale.")
+    input()
+    print('"Tickets, please."')
+    input()
+
+    if "Ticket" in inventory:
+        print("\nYou hand over your ticket.")
+        print('"Thank you."')
+
+    else:
+        print("\nYou search your pockets.")
+        print("Nothing.")
+        input()
+        print('\nThe inspector smiles.')
+        print('"Interesting..."')
+        sanity -= 10
+
+    input()
+    print('\n"...What was your name?"')
+    player = input("\nEnter your name: ")
+    input()
+    print(f'\n"...Ah yes, {player}."')
+    input()
+    print('"I have been expecting you."')
+    sanity -= 5
+
+if alive:
+    input("\nPress ENTER...")
+    print("\nYou notice one last door.")
+    print("Unlike the others...")
+    print("It is locked.")
+    input()
+
+    if silver_key:
+        print("\nYou use the Silver Key.")
+        input()
+        print("Click.")
+        print("The door slowly opens...")
+        input()
+        print("\nInside is a tiny room.")
+        print("Dust covers everything.")
+        input()
+        print("\nThere is an old journal.")
+        print("You begin reading...")
+        input()
+        print("\nEntry 1:")
+        print('"The train crashed."')
+        input()
+        print("\nEntry 2:")
+        print('"Nobody survived."')
+        input()
+        print("\nEntry 3:")
+        print('"Except..."')
+        input()
+        print('"One passenger refuses to leave."')
+        ghost_seen = True
+
+    else:
+        print("\nThe door won't open.")
+        print("Maybe there's a key somewhere.")
+
+if alive:
+    input("\nPress ENTER...")
+    print("\nAs you walk back...")
+    input()
+    print("\nEvery seat is occupied.")
+    input()
+    print("\nYou freeze.")
+    input()
+    print("The train was empty.")
+    print("Just moments ago.")
+    input()
+    print("\nNobody speaks.")
+    print("Nobody moves.")
+    input()
+    print("\nEvery passenger slowly turns...")
+    input()
+    print("...and looks directly at you.")
+    sanity -= 20
+
+if alive:
+    event = random.randint(1, 3)
+
+    if event == 1:
+        print("\nA child laughs somewhere.")
+        sanity -= 5
+
+    elif event == 2:
+        print("\nYou hear someone whisper your name.")
+        sanity -= 10
+
+    else:
+        print("\nEverything is silent.")
+        sanity += 5
+
+if alive:
+
+    input("\nPress ENTER...")
+    print("\nA voice echoes through the train.")
+    input()
+    print('"Only ONE of you belongs here."')
+    input()
+    print("\nWho do you think is alive?")
+    print("\n1. The little girl")
+    print("2. The businessman")
+    print("3. Me")
+    truth = input("\nChoice: ")
+
+if alive:
+    print("\nThe train begins slowing down...")
+    input()
+    print("\nOutside...")
+    print("There is a station.")
+    input()
+    print("\nBut the station has no name.")
+    input()
+    print("\nThe doors open.")
+
+if alive and truth == "3" and girl_helped and silver_key and lever_stop and not money:
+    print("\nThe station master steps onto the platform.")
+    input()
+    print('"You finally remembered."')
+    input()
+    print('"This train was never taking you to death..."')
+    input()
+    print('"It was bringing you back."')
+    input()
+    print("\nThe Silver Key begins glowing.")
+    input()
+    print("\nEverything around you starts fading.")
+    input()
+    print("\nYou suddenly wake up...")
+    print("\n11:56 PM")
+    print("You're back on the station bench.")
+    input()
+    print("\nA normal train arrives.")
+    print("Its destination reads:")
+    print("\nHOME")
+    input()
+    print("\nThe station master smiles.")
+    print('"This time... take the right train."')
+    input()
+    print("\n⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐")
+    print("      TRUE ENDING")
+    print(" The Last Train Never Came")
+    print("⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐")
+    alive = False
+
+if alive and truth != "3":
+    print("\nThe passengers begin laughing.")
+    input()
+    print('"Wrong answer."')
+    input()
+    print("\nYou look at your own reflection.")
+    input()
+    print("\nYou aren't there.")
+    input()
+    print("\nYou realize...")
+    print("You died before boarding the train.")
+    input()
+    print("\nThe train doors close.")
+    print("You remain inside forever.")
+    print("\n👻 GHOST ENDING")
+    alive = False
+
+if alive and money:
+    print("\nYou step off the train.")
+    input()
+    print("\nThe suitcase is still in your hand.")
+    input()
+    print("\nYou open it.")
+    input()
+    print("\nEvery note inside has turned into ash.")
+    input()
+    print("\nA whisper says...")
+    print('"Greed always has a price."')
+    input()
+    print("\nYou hear a train whistle behind you.")
+    print("When you turn around...")
+    print("The platform is gone.")
+    print("\n💰 GREEDY ENDING")
+    alive = False
+
+if alive and sanity <= 20:
+    print("\nYou can't tell what is real anymore.")
+    input()
+    print("\nEvery passenger has your face.")
+    input()
+    print("\nThey all smile.")
+    input()
+    print("\nYou begin laughing.")
+    input()
+    print("\nThe train keeps moving forever.")
+    print("\n😵 INSANITY ENDING")
+    alive = False
+
+if alive and not girl_helped:
+    print("\nThe little girl walks past you.")
+    input()
+    print('"You left me alone..."')
+    input()
+    print("\nShe disappears into the fog.")
+    input()
+    print("\nThe station disappears with her.")
+    input()
+    print("\n👧 LOST CHILD ENDING")
+    alive = False
+
+if alive:
+    print("\nThe black-uniformed conductor returns.")
+    input()
+    print('"Every train needs someone to guide it."')
+    input()
+    print("\nHe removes his cap.")
+    input()
+    print("He places it on your head.")
+    input()
+    print("\nThe whistle blows.")
+    print("\nA new passenger arrives...")
+    input()
+    print("\nYou whisper:")
+    print('"Tickets, please."')
+    print("\n🚂 NEW CONDUCTOR ENDING")
+
+print("\n=======================================")
+print("GAME OVER")
+print("=======================================")
+print("\nFinal Inventory:")
+
+for item in inventory:
+    print("-", item)
+print("\nFinal Sanity:", sanity)
+print("\nThank you for playing...")
+print("\nTHE LAST TRAIN")
