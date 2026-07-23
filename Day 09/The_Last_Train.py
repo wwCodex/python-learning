@@ -47,7 +47,7 @@ input("\nPress ENTER...")
 
 print('\n"There is one train left."')
 
-print('\n"But..."')
+print('\n"But...."')
 
 input()
 
@@ -595,3 +595,5 @@ for item in inventory:
 print("\nFinal Sanity:", sanity)
 print("\nThank you for playing...")
 print("\nTHE LAST TRAIN")
+
+
