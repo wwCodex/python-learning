@@ -145,6 +145,6 @@ while True:
 
     again = input("\nPlay Again? (y/n): ").lower()
 
-    if again != "y":
+    if again!= "y":
         print("\nThanks for playing!")
         break
