@@ -17,7 +17,7 @@ correct_letters = []
 
 while not game_over:
 
-    print("You have " + str(lives) + " lives left")
+    print("You have " + str(lives) + "/6 lives left")
     guess = input("Guess a letter: ").lower()
 
     display = ""
