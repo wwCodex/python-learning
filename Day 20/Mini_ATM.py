@@ -31,9 +31,9 @@ def withdraw():
 
 
 def atm():
-    print("====================")
+    print("=====================")
     print("      MINI ATM")
-    print("====================")
+    print("=====================")
 
     while True:
 
