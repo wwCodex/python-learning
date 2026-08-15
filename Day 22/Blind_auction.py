@@ -1,27 +1,31 @@
-from art import logo
-print(logo)
+import art
+import random
+print(art.logo)
+bidders = {}
+def input_bidder():
+    name=input("What is your name?\n")
+    bid=int(input("What is your bid?'\n$ "))
+    bidders[name]=bid
+def highest_bidder(bids):
+    higher_bid=0
+    name=""
+    for key in bids:
+        if bids[key] > higher_bid:
+            higher_bid = bidders[key]
+            name=key
+        elif bids[key] == higher_bid:
+            print(f"Draw between {name} and {key} at a bid of {higher_bid}")
+            draw=[name,key]
+            print(f"Random drawing the winner to break the tie....the winner is {random.choice(draw)}")
+            exit(0)
 
+    print(f"Highest bidder is {name} with bid: $ {higher_bid}")
 
-def find_highest_bidder(bidding_record):
-    highest_bid = 0
-    winner = ""
-    for bidder in bidding_record:
-        bid_amount = bidding_record[bidder]
-        if bid_amount > highest_bid:
-            highest_bid = bid_amount
-            winner = bidder
-    print(f"The winner is {winner} with a bid of ${highest_bid}")
+while True:
+    input_bidder()
+    if input("Are there any more bidders? 'Yes' or 'No'").lower() =="yes":
+       print("\n" * 50)
+    else:
+        break
 
-
-bids = {}
-continue_bidding = True
-while continue_bidding:
-    name = input("What is your name?: ")
-    price = int(input("What is your bid?: $"))
-    bids[name] = price
-    should_continue = input("Are there any other bidders? Type 'yes or 'no'.\n")
-    if should_continue == "no":
-        continue_bidding = False
-        find_highest_bidder(bids)
-    elif should_continue == "yes":
-        print("\n" * 20)
+highest_bidder(bidders)
