@@ -27,9 +27,9 @@ luck = 100
 
 print("You arrive at the island.")
 print("Where do you want to go?")
-print("1. Jungle 🌳")
-print("2. Cave 🕳")
-print("3. Beach 🏖")
+print("1. Jungle")
+print("2. Cave")
+print("3. Beach")
 
 choice1 = input("Choose: ").lower()
 
@@ -46,12 +46,12 @@ if choice1 == "1" or choice1 == "jungle":
     jungle = input("Choose: ").lower()
 
     if jungle == "1":
-        print("\n🐵 A wise monkey gives you an Ancient Key!")
+        print("\nA wise monkey gives you an Ancient Key!")
         inventory.append("key")
         luck += 20
 
     elif jungle == "2":
-        print("\n🐯 A tiger was waiting.")
+        print("\nA tiger was waiting.")
         print("GAME OVER.")
         alive = False
 
@@ -75,7 +75,7 @@ elif choice1 == "2" or choice1 == "cave":
 
     if cave == "1":
         print("\nYou discover ancient carvings.")
-        print("One symbol is circled: 🐢")
+        print("One symbol is circled:")
         inventory.append("torch")
 
     elif cave == "2":
@@ -112,7 +112,7 @@ elif choice1 == "3" or choice1 == "beach":
             alive = False
 
     elif beach == "3":
-        print("\n🦈 A shark eats you.")
+        print("\nA shark eats you.")
         alive = False
 
     else:
@@ -129,13 +129,13 @@ if alive:
     print("\nAfter hours of walking, you reach the Temple.")
     print("Three symbols appear.")
 
-    print("🐍 Snake")
-    print("🦅 Eagle")
-    print("🐢 Turtle")
+    print("Snake")
+    print("Eagle")
+    print("Turtle")
 
     symbol = input("Choose: ").lower()
 
-    if symbol == "turtle" or symbol == "🐢":
+    if symbol == "turtle":
         print("\nThe door slowly opens...")
     else:
         print("\nPoison darts shoot from the walls!")
@@ -226,30 +226,30 @@ if alive:
     if final == "3":
 
         if "key" in inventory:
-            print("\n🏆 SECRET ENDING!")
+            print("\nSECRET ENDING!")
             print("The Ancient Key unlocks the compass.")
             print("It points to the REAL Heart of Atlantis!")
             print("You become the greatest treasure hunter ever.")
             won = True
 
         elif "map" in inventory:
-            print("\n🏴‍☠️ ENDING 2")
+            print("\nENDING 2")
             print("The map was fake.")
             print("Pirates steal the treasure before you.")
             print("You survive... but return empty-handed.")
 
         else:
-            print("\n🏆 ENDING 1")
+            print("\nENDING 1")
             print("The compass reveals the hidden treasure!")
             print("You escape rich!")
 
     elif final == "2":
-        print("\n💀 ENDING 3")
+        print("\nENDING 3")
         print("The Orb was cursed.")
         print("You are turned into stone.")
 
     else:
-        print("\n💀 ENDING 4")
+        print("\nENDING 4")
         print("The crown triggers the collapse of the temple.")
         print("You are buried forever.")
 
@@ -260,7 +260,7 @@ print("Inventory:", inventory)
 print("Luck:", luck)
 
 if won:
-    print("Status: LEGENDARY VICTORY 👑")
+    print("Status: LEGENDARY VICTORY")
 elif alive:
     print("Status: You survived.")
 else:

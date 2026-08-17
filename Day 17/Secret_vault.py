@@ -25,13 +25,13 @@ def give_hint(code, guess):
     for i in range(3):
 
         if guess[i] == code[i]:
-            print(f"Digit {i + 1}: CORRECT ✓")
+            print(f"Digit {i + 1}: CORRECT")
 
         elif guess[i] < code[i]:
-            print(f"Digit {i + 1}: Too low ↑")
+            print(f"Digit {i + 1}: Too low")
 
         else:
-            print(f"Digit {i + 1}: Too high ↓")
+            print(f"Digit {i + 1}: Too high")
 
 
 def play_game():

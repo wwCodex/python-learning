@@ -76,7 +76,7 @@ def play_game():
     accusation = int(input("Who is lying? (1/2/3): "))
 
     if accusation == liar:
-        print("\nCASE CLOSED 🔎")
+        print("\nCASE CLOSED")
         print("You caught the liar.")
 
     else:

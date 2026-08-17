@@ -102,7 +102,7 @@ while True:
 
     if board[row][col] == "M":
 
-        print("\n💥 BOOM!")
+        print("\nBOOM!")
 
         for i in range(SIZE):
             for j in range(SIZE):
@@ -124,6 +124,6 @@ while True:
 
         print_board(board, revealed)
 
-        print("\n🎉 YOU WIN!")
+        print("\nYOU WIN!")
 
         break
