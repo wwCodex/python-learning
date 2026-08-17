@@ -1,4 +1,4 @@
-import random
+import random 
 
 def number_game():
     number = random.randint(1, 100)
