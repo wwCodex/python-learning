@@ -1,4 +1,4 @@
-expenses = {}
+expenses = {} 
 
 
 def add_expense():
