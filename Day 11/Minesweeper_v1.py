@@ -1,4 +1,4 @@
-import random
+import random 
 
 SIZE = 5
 MINES = 5
