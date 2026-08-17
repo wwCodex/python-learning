@@ -1,4 +1,4 @@
-import random
+import random 
 
 
 def choose_liar():
