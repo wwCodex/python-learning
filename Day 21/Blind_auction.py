@@ -1,5 +1,6 @@
 import art
 import random
+
 print(art.logo)
 bidders = {}
 def input_bidder():
@@ -9,6 +10,7 @@ def input_bidder():
 def highest_bidder(bids):
     higher_bid=0
     name=""
+    
     for key in bids:
         if bids[key] > higher_bid:
             higher_bid = bidders[key]
