@@ -17,3 +17,5 @@ def format_name(first_name, last_name):
     return final_name
 
 print(f"Your name in proper format is: {format_name(input("Input your first name below\n"), input("Input your last name below\n"))}")
+
+#Can also be done with the built-in title() function in Python, but this is a more manual approach to demonstrate string manipulation.
