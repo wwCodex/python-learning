@@ -1,6 +1,5 @@
 vault = []
 
-
 def add_credential():
     website = input("\nWebsite: ").lower()
     username = input("Username: ")
