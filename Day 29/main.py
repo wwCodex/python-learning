@@ -13,7 +13,6 @@ def add_credential():
 
     print("Credential saved!")
 
-
 def view_vault():
 
     if len(vault) == 0:
