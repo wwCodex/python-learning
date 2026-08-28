@@ -86,6 +86,7 @@ def menu():
 6. Statistics
 7. Exit
 """)
+        
         choice = input("Choose: ")
 
         if choice == "1":
