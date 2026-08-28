@@ -9,7 +9,7 @@ def add_task():
         "done": False
     }
     tasks.append(task)
-    print("✓ Task added.")
+    print("Task added.")
 
 def view_tasks():
     if len(tasks) == 0:
@@ -18,7 +18,7 @@ def view_tasks():
     print("\n========== TASKS ==========")
 
     for i in range(len(tasks)):
-        status = "✓" if tasks[i]["done"] else "•"
+        status = "Done" if tasks[i]["done"] else "•"
         print(f"{i+1}. [{status}] {tasks[i]['title']} ({tasks[i]['priority']})")
 
 def complete_task():
