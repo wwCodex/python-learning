@@ -1,6 +1,6 @@
 # Student Dashboard CLI
-A terminal-based student management system built in Python.
-
+A terminal-based student management system built in Python. 
+ 
 ## Features
 - Add & update subjects
 - Track attendance
