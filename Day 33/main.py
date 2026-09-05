@@ -45,6 +45,7 @@ def decode():
 
     print("\nDecoded:")
     print(result)
+    
 
 while True:
 
