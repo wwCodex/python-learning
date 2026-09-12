@@ -3,7 +3,6 @@ import string
 
 links = {}
 
-
 def generate_code():
     characters = string.ascii_letters + string.digits
     while True:
