@@ -1,6 +1,5 @@
 import random
 import string
-
 links = {}
 
 def generate_code():
